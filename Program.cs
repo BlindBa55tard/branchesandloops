@@ -1,55 +1,70 @@
 ﻿using System;
 
-namespace BranchesAndLoops
+namespace NumbersInCSharp
 {
     class Program
     {
-        static void ExploreIf()
+        static void WorkingWithIntegers()
         {
-            int a = 5;
-            int b = 3;
-            if (a + b > 10)
-            {
-                Console.WriteLine("The answer is greater than 10");
-            }
-            else
-            {
-                Console.WriteLine("The answer is not greater than 10");
-            }
-
-            int c = 4;
-            if ((a + b + c > 10) && (a > b))
-            {
-                Console.WriteLine("The answer is greater than 10");
-                Console.WriteLine("And the first number is greater than the second");
-            }
-            else
-            {
-                Console.WriteLine("The answer is not greater than 10");
-                Console.WriteLine("Or the first number is not greater than the second");
-            }
-
-            if ((a + b + c > 10) || (a > b))
-            {
-                Console.WriteLine("The answer is greater than 10");
-                Console.WriteLine("Or the first number is greater than the second");
-            }
-            else
-            {
-                Console.WriteLine("The answer is not greater than 10");
-                Console.WriteLine("And the first number is not greater than the second");
-            }
-            int counter = 0;
-while (counter < 10)
-{
-    Console.WriteLine($"Hello World! The counter is {counter}");
-    counter++;
-}while (counter < 10) ;
+            int a = 18;
+            int b = 6;
+            
+            // addition
+            int c = a + b;
+            Console.WriteLine(c);
+            
+            // subtraction
+            c = a - b;
+            Console.WriteLine(c);
+            
+            // multiplication
+            c = a * b;
+            Console.WriteLine(c);
+            
+            // division
+            c = a / b;
+            Console.WriteLine(c);
         }
 
+        static void OrderPredence()
+
+        {
+
+
+    
+
+        double e = 19;
+        double f = 23;
+        double g = 8;
+        double h = (e + f) /g;
+        Console.WriteLine(h);
+
+      
+        double third = 1.0 / 3.0;
+        Console.WriteLine(third);
+
+        decimal min = decimal.MinValue;
+        decimal max = decimal.MaxValue;
+        Console.WriteLine($"The range of decimal is: {min} to {max}");
+        
+        double a = 1.0;
+        double b = 3.0;
+        Console.WriteLine(a / b);
+
+        decimal c = 1.0M;
+        decimal d = 3.0M;
+        Console.WriteLine(c / d);
+        
+        double radius = 2.50;
+        double area = Math.PI * radius * radius;
+        Console.WriteLine(area);
+
+        }
         static void Main(string[] args)
         {
-          //ExploreIf();
+            WorkingWithIntegers();
+
+            OrderPredence();
         }
     }
 }
